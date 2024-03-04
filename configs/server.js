@@ -31,7 +31,7 @@ class Server {
         this.ussCartPath = '/onlineStore/v1/uss/cart';
         this.ussBuyPath = '/onlineStore/v1/uss/buy';
         this.ussHistoryPath = '/onlineStore/v1/uss/history';
-        this.ussMePath = '/onlineStore/v1/uss/me';
+        this.ussUserPath = '/onlineStore/v1/uss/user';
 
         this.middlewares();  // Configura los middleware de la aplicación
         this.conectarDB();  // Establece la conexión a la base de datos
@@ -63,7 +63,7 @@ class Server {
         this.app.use(this.ussCartPath, cartRoutes );
         this.app.use(this.ussBuyPath, billRoutes);
         this.app.use(this.ussHistoryPath, billRoutes);
-        this.app.use(this.ussMePath, userRoutes);
+        this.app.use(this.ussUserPath, userRoutes);
     }
 
     // Inicia el servidor y escucha en el puerto especificado
