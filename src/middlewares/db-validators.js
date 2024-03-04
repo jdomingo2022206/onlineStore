@@ -1,15 +1,15 @@
-const User = require('../modules/user/user.model');
-const Role = require('../modules/role/role.model');
-const Publication = require('../modules/publication/publication.model');
-const Comment = require('../modules/comment/comment.model');
+import User from "../modules/user/user.model.js";
+import Role from "../modules/role/role.model.js";
+import Publication from "../modules/publication/publication.model.js";
+import Comment from "../modules/comment/comment.model.js";
 
-export const existentEmail = async (correo = '') => {
+export const existentEmail = async (mail = '') => {
     console.log('');
     console.log('--- [NOTES] existentEmail.db-validators');
     try {
-        const existMail = await User.findOne({correo});
+        const existMail = await User.findOne({mail});
         if(existMail){
-            throw new Error(`El email ${ correo } ya fue registrado`);
+            throw new Error(`El email ${ mail } ya fue registrado`);
         }
     } catch (error) {
         console.log('Error al buscar usuario por correo electrónico:', error);

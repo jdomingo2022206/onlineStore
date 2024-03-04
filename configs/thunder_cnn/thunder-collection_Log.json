@@ -1,71 +1,28 @@
 {
     "client": "Thunder Client",
     "collectionName": "Log",
-    "dateExported": "2024-03-04T17:02:14.445Z",
+    "dateExported": "2024-03-07T06:49:06.284Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "4d214ca8-b40c-4024-b0f4-5a5656cde239",
-            "colId": "025aa31f-8354-45f6-baa0-3f5008f53b38",
-            "containerId": "",
-            "name": "logGet",
-            "url": "http://localhost:10433/academic/log?email=test10@kinal.edu.gt&pass=$2a$10$N7WbKvAUDGqSrHTUEIYnn.yx8ap2UPDLhUCJqBbY4aSSe/Vj5H6ve",
-            "method": "GET",
-            "sortNum": 10000,
-            "created": "2024-03-04T17:01:11.643Z",
-            "modified": "2024-03-04T17:01:11.643Z",
-            "headers": [],
-            "params": [
-                {
-                    "name": "email",
-                    "value": "test10@kinal.edu.gt",
-                    "isPath": false
-                },
-                {
-                    "name": "pass",
-                    "value": "$2a$10$N7WbKvAUDGqSrHTUEIYnn.yx8ap2UPDLhUCJqBbY4aSSe/Vj5H6ve",
-                    "isPath": false
-                }
-            ],
-            "tests": []
-        },
-        {
-            "_id": "2d5a48d6-42b0-447f-aad6-def0021c9f24",
-            "colId": "025aa31f-8354-45f6-baa0-3f5008f53b38",
-            "containerId": "",
-            "name": "logCrypGet",
-            "url": "http://localhost:10433/academic/log/cryp",
-            "method": "GET",
-            "sortNum": 20000,
-            "created": "2024-03-04T17:01:11.644Z",
-            "modified": "2024-03-04T17:01:11.644Z",
-            "headers": [],
-            "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"correo\" : \"test10@kinal.edu.gt\",\n  \"password\" : \"$2a$10$N7WbKvAUDGqSrHTUEIYnn.yx8ap2UPDLhUCJqBbY4aSSe/Vj5H6ve\"\n}",
-                "form": []
-            },
-            "tests": []
-        },
-        {
-            "_id": "6bd5bf72-29fc-413b-a898-c0cb863b93dd",
-            "colId": "025aa31f-8354-45f6-baa0-3f5008f53b38",
+            "_id": "99e90ddb-b6bc-4fd6-ba62-a73379d1d83f",
+            "colId": "c0245396-a55c-4867-952d-dae65d6e9709",
             "containerId": "",
             "name": "login",
-            "url": "http://localhost:10433/academic/log/login",
+            "url": "http://localhost:10433/tellMe/v1/auth/login",
             "method": "POST",
             "sortNum": 30000,
-            "created": "2024-03-04T17:01:11.645Z",
-            "modified": "2024-03-04T17:01:11.645Z",
+            "created": "2024-02-16T16:20:10.037Z",
+            "modified": "2024-03-07T06:41:07.147Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"mail\":\"becheverria@kinal.edu.gt\",\n  \"password\":\"brauilio\"\n}",
+                "raw": "{\n  \"mail\":\"admin1@kinal.edu.gt\",\n  \"password\":\"adm\"\n}",
                 "form": []
             },
+            "reqType": "post",
             "tests": []
         }
     ]
