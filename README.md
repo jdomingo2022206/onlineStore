@@ -11,7 +11,7 @@ This project focuses on developing a web API implemented in Node.js, aimed at ma
 - #### [Specific Functions](#specific-functions-1)
   - ###### [Important Notes](#important-notes-1)
   - ###### [Administrator](#administrator-1)
-  - ###### [Costumer](#costumer)
+  - ###### [Costumer](#costumer-1)
 - #### [Thanks](#thanks-1)
 
 
