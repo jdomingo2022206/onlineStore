@@ -6,14 +6,13 @@ This project focuses on developing a web API implemented in Node.js, aimed at ma
 > [<img src="https://cdn-icons-png.flaticon.com/512/8146/8146003.png" width="300" height="300">](URL_del_Enlace)
 
 ## Table of Contents
-- [Overview](#overview)
-  - [Table of Contents](#table-of-contents)
-  - [How run the project?](#how-run-the-project)
-  - [Create Token](#create-token)
-  - [Specific Functions](#specific-functions)
-    - [Administrator:](#administrator)
-    - [Client:](#client)
-  - [Thanks](#thanks)
+- #### [How run the project?](#how-run-the-project)
+- #### [Create Token](#create-token)
+- #### [Specific Functions](#specific-functions)
+  - ###### [Important Notes](#important-notes)
+  - ###### [Administrator](#administrator)
+  - ###### [Client](#client)
+- #### [Thanks](#thanks)
 
 
 ## How run the project?
@@ -29,12 +28,12 @@ npm i --save-dev nodemon
 
 3. Import data to MongoDB from 
 ```
-./tellMe/configs/data
+./onlineStore/configs/data
 ```
 
 4. Import thunder connection from 
 ```
-./tellMe/configs/thunder_cnn
+./onlineStore/configs/thunder_cnn
 ```
 5. Run project 
 ```
@@ -91,31 +90,31 @@ Remember set your variables creating your .env file The variables you should cre
   - Edit an invoice, with stock validation to ensure its update.
   - View invoices associated with specific users, as well as detailed products in an invoice.
 
-### Client:
+### Customer:
 
 - **User Authentication**: 
   - Log in and/or register, where automatic registration assigns the user the client role. Access to all described functions is conditioned upon successful authentication through username and password.
 
 - **Product Exploration**: 
-  - View the catalog of top-selling products.
+  - View the catalog of best-selling products.
   - Search for products by name.
   - Explore existing categories.
   - Access the product catalog filtered by category.
 
 - **Shopping Cart Management**: 
-  - Add products to the shopping cart for later purchase.
+  - Enables the option to add products to the shopping cart for later acquisition.
 
 - **Purchase Process**: 
-  - Complete the purchase process, presenting a detailed invoice as a result of the transaction.
+  - Allows users to complete the purchase process, presenting an invoice detailed as a result of the transaction.
 
 - **Purchase History**: 
-  - Access a comprehensive history of previous purchases.
+  - Users can access a complete history of their purchases.
 
 - **Profile Management**: 
-  - Edit user profile details, such as personal information and preferences.
+  - Provides the ability to edit user profile details, such as personal information and preferences.
 
 - **Account Deletion**: 
-  - Delete the user account, subject to confirmation and additional security measures.
+  - Allows users to delete their account, subject to confirmation and additional security measures.
   
 
 ## Thanks 
