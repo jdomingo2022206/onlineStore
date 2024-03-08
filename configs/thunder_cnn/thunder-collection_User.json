@@ -1,116 +1,49 @@
 {
     "client": "Thunder Client",
     "collectionName": "User",
-    "dateExported": "2024-03-04T17:02:07.149Z",
+    "dateExported": "2024-03-07T06:49:16.208Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "3436edf5-714f-4e8d-a97b-f6f5efb3f6c3",
-            "colId": "dff8cb8f-d7d8-4d7d-8eca-b0176c1a97da",
+            "_id": "ef6681ff-8c0f-4980-a0cd-4e84038d0a7f",
+            "colId": "ad268604-63d4-4ba8-8239-20465e858bde",
             "containerId": "",
-            "name": "studentPost Copy",
-            "url": "http://localhost:10433/academic/user",
+            "name": "userPost",
+            "url": "http://localhost:10433/tellMe/v1/user/",
             "method": "POST",
-            "sortNum": 5000,
-            "created": "2024-03-04T17:01:11.674Z",
-            "modified": "2024-03-04T17:01:11.674Z",
+            "sortNum": 2500,
+            "created": "2024-03-05T05:26:33.079Z",
+            "modified": "2024-03-05T05:26:33.079Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"student 1\",\n  \"correo\":\"student_1@kinal.edu.gt\",\n  \"password\":\"student 1\"\n}",
+                "raw": "{\n  \"name\":\"user\",\n  \"mail\":\"user1@kinal.edu.gt\",\n  \"password\":\"uss\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "1fd2851c-c8a0-416b-a54d-c9f97d1bb790",
-            "colId": "dff8cb8f-d7d8-4d7d-8eca-b0176c1a97da",
-            "containerId": "",
-            "name": "addMeCourse",
-            "url": "http://localhost:10433/academic/student/addMeCourse",
-            "method": "POST",
-            "sortNum": 10000,
-            "created": "2024-03-04T17:01:11.671Z",
-            "modified": "2024-03-04T17:01:11.671Z",
-            "headers": [
-                {
-                    "name": "x-access-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWNhNGNiZjdkMDJkNGY5NzhhZmY4ODIiLCJpYXQiOjE3MDg3MDQ0MzYsImV4cCI6MTcwODcwODAzNn0.IaSB5GX-O0x0gFtpg7sbLyy32itCbQPH9mVigIOc9UU"
-                }
-            ],
-            "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"courseName\":\"Etica\"\n}",
-                "form": []
-            },
-            "tests": []
-        },
-        {
-            "_id": "869bf549-dbb5-4842-a37a-baa8a4ddbfa2",
-            "colId": "dff8cb8f-d7d8-4d7d-8eca-b0176c1a97da",
-            "containerId": "",
-            "name": "myCourses",
-            "url": "http://localhost:10433/academic/student/myCourses",
-            "method": "GET",
-            "sortNum": 20000,
-            "created": "2024-03-04T17:01:11.672Z",
-            "modified": "2024-03-04T17:01:11.672Z",
-            "headers": [
-                {
-                    "name": "x-access-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWNhNGNiZjdkMDJkNGY5NzhhZmY4ODIiLCJpYXQiOjE3MDg3MDQ0MzYsImV4cCI6MTcwODcwODAzNn0.IaSB5GX-O0x0gFtpg7sbLyy32itCbQPH9mVigIOc9UU"
-                }
-            ],
-            "params": [],
-            "tests": []
-        },
-        {
-            "_id": "cb8110d4-9408-41a8-b0ba-125f30599e43",
-            "colId": "dff8cb8f-d7d8-4d7d-8eca-b0176c1a97da",
-            "containerId": "",
-            "name": "outMeCourse",
-            "url": "http://localhost:10433/academic/student/outMeCourse",
-            "method": "POST",
-            "sortNum": 30000,
-            "created": "2024-03-04T17:01:11.673Z",
-            "modified": "2024-03-04T17:01:11.673Z",
-            "headers": [
-                {
-                    "name": "x-access-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWNhNGNiZjdkMDJkNGY5NzhhZmY4ODIiLCJpYXQiOjE3MDg3MDQ0MzYsImV4cCI6MTcwODcwODAzNn0.IaSB5GX-O0x0gFtpg7sbLyy32itCbQPH9mVigIOc9UU"
-                }
-            ],
-            "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"courseName\":\"Etica\"\n}",
-                "form": []
-            },
-            "tests": []
-        },
-        {
-            "_id": "fd7112bd-7508-4db4-9560-6f0876bd2a61",
-            "colId": "dff8cb8f-d7d8-4d7d-8eca-b0176c1a97da",
+            "_id": "12d7d9fa-a61c-4cbb-b8cd-716e86061c52",
+            "colId": "ad268604-63d4-4ba8-8239-20465e858bde",
             "containerId": "",
             "name": "editMyProfile Copy Copy",
             "url": "http://localhost:10433/academic/user/editMyProfile",
             "method": "PUT",
-            "sortNum": 40000,
-            "created": "2024-03-04T17:01:11.675Z",
-            "modified": "2024-03-04T17:01:11.675Z",
+            "sortNum": 17500,
+            "created": "2024-02-18T06:19:48.082Z",
+            "modified": "2024-02-18T06:19:48.082Z",
             "headers": [
                 {
                     "name": "x-access-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWNhNGNiZjdkMDJkNGY5NzhhZmY4ODIiLCJpYXQiOjE3MDg3MDQ0MzYsImV4cCI6MTcwODcwODAzNn0.IaSB5GX-O0x0gFtpg7sbLyy32itCbQPH9mVigIOc9UU"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWNkNjQyNmMwMjg2NmI5NzZhZjgyOTUiLCJpYXQiOjE3MDgyMzYwNjMsImV4cCI6MTcwODIzOTY2M30.rRQ23yszT2xP48CdBcTupihIqRe0x5LMw3GwaJB6AhY"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"student 1\"\n}",
+                "raw": "{\n  \"nombre\":\"Braulio Echeverria\"\n}",
                 "form": []
             },
             "tests": []

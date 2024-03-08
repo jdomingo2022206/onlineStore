@@ -1,119 +1,144 @@
 {
     "client": "Thunder Client",
     "collectionName": "Admin",
-    "dateExported": "2024-03-04T17:02:01.622Z",
+    "dateExported": "2024-03-07T06:49:11.283Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "7c2d84f2-c1de-460e-a2c3-f9e56a9e5b50",
-            "colId": "a4c40608-8fb6-462c-9080-e28642efb4aa",
+            "_id": "fb369a16-a3a6-4a0d-98ee-4cef4893e855",
+            "colId": "12ca205c-20ac-473f-8f55-6df9ce40274b",
             "containerId": "",
-            "name": "studentPost",
-            "url": "http://localhost:10433/academic/user",
+            "name": "userPost",
+            "url": "http://localhost:10433/tellMe/v1/user/",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-04T17:01:11.628Z",
-            "modified": "2024-03-04T17:01:11.628Z",
+            "created": "2024-02-13T01:43:18.245Z",
+            "modified": "2024-03-07T06:24:28.833Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"student 1\",\n  \"correo\":\"student_1@kinal.edu.gt\",\n  \"password\":\"student 1\"\n}",
+                "raw": "{\n  \"name\":\"user\",\n  \"mail\":\"user1@kinal.edu.gt\",\n  \"password\":\"uss\"\n}",
                 "form": []
             },
+            "reqType": "post",
             "tests": []
         },
         {
-            "_id": "bcb3cee6-aa92-463b-8948-c0a263413848",
-            "colId": "a4c40608-8fb6-462c-9080-e28642efb4aa",
+            "_id": "932bb745-4eb3-418c-9a8c-ea71217192bc",
+            "colId": "12ca205c-20ac-473f-8f55-6df9ce40274b",
             "containerId": "",
-            "name": "teacherPost",
-            "url": "http://localhost:10433/academic/user/teacher",
+            "name": "adminPost",
+            "url": "http://localhost:10433/tellMe/v1/user/admin",
             "method": "POST",
             "sortNum": 15000,
-            "created": "2024-03-04T17:01:11.633Z",
-            "modified": "2024-03-04T17:01:11.633Z",
+            "created": "2024-02-13T01:43:18.250Z",
+            "modified": "2024-03-05T04:15:22.590Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Braulio Echeverria\",\n  \"correo\":\"becheverria@kinal.edu.gt\",\n  \"password\":\"brauilio\"\n  \n}",
+                "raw": "{\n  \"name\":\"admin\",\n  \"mail\":\"admin1@kinal.edu.gt\",\n  \"password\":\"adm\"\n  \n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "52f5701a-5a9e-4558-8dce-36744849a733",
-            "colId": "a4c40608-8fb6-462c-9080-e28642efb4aa",
+            "_id": "beb4ee22-e4b9-4854-bc54-b538a4fc40c9",
+            "colId": "12ca205c-20ac-473f-8f55-6df9ce40274b",
             "containerId": "",
             "name": "userGet",
-            "url": "http://localhost:10433/academic/user",
+            "url": "http://localhost:10433/tellMe/v1/user/",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-04T17:01:11.629Z",
-            "modified": "2024-03-04T17:01:11.629Z",
-            "headers": [],
+            "created": "2024-02-13T01:43:18.246Z",
+            "modified": "2024-03-07T06:41:19.334Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2YTRkODhjM2YyYjU2MjU3YzNmZTYiLCJpYXQiOjE3MDk3OTM2NjcsImV4cCI6MTcwOTc5NzI2N30.FgQWY9AmnQxNmB0G79id1RnpGlNRPQMWtRVqqUuNjB8"
+                }
+            ],
             "params": [],
+            "reqType": "get",
             "tests": []
         },
         {
-            "_id": "29a1f7b6-153f-42e0-b069-a4036ec82736",
-            "colId": "a4c40608-8fb6-462c-9080-e28642efb4aa",
+            "_id": "3206db06-8864-4d27-850e-2911ec48a6b9",
+            "colId": "12ca205c-20ac-473f-8f55-6df9ce40274b",
             "containerId": "",
             "name": "getUserById",
-            "url": "http://localhost:10433/academic/user/65cd6426c02866b76af8295",
+            "url": "http://localhost:10433/tellMe/v1/user/65e95d92d2932c83c9a4c11c",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2024-03-04T17:01:11.630Z",
-            "modified": "2024-03-04T17:01:11.630Z",
-            "headers": [],
+            "created": "2024-02-13T01:43:18.247Z",
+            "modified": "2024-03-07T06:42:27.916Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2YTRkODhjM2YyYjU2MjU3YzNmZTYiLCJpYXQiOjE3MDk3OTM2NjcsImV4cCI6MTcwOTc5NzI2N30.FgQWY9AmnQxNmB0G79id1RnpGlNRPQMWtRVqqUuNjB8"
+                }
+            ],
             "params": [],
+            "reqType": "get",
             "tests": []
         },
         {
-            "_id": "15db3dc5-ea8f-402a-8f78-eeecb47e8715",
-            "colId": "a4c40608-8fb6-462c-9080-e28642efb4aa",
+            "_id": "afa1d9ad-73cc-4519-84ca-7df845bbfe81",
+            "colId": "12ca205c-20ac-473f-8f55-6df9ce40274b",
             "containerId": "",
             "name": "userPut",
-            "url": "http://localhost:10433/academic/user/id",
+            "url": "http://localhost:10433/tellMe/v1/user",
             "method": "PUT",
             "sortNum": 40000,
-            "created": "2024-03-04T17:01:11.631Z",
-            "modified": "2024-03-04T17:01:11.631Z",
-            "headers": [],
+            "created": "2024-02-13T01:43:18.248Z",
+            "modified": "2024-03-07T06:48:20.759Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2YTRkODhjM2YyYjU2MjU3YzNmZTYiLCJpYXQiOjE3MDk3OTM2NjcsImV4cCI6MTcwOTc5NzI2N30.FgQWY9AmnQxNmB0G79id1RnpGlNRPQMWtRVqqUuNjB8"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Paquita la del barrio\"\n}",
+                "raw": "{\n  \"_id\": \"65e95d92d2932c83c9a4c11c\",\n  \"name\":\"Marco\"\n}",
                 "form": []
             },
+            "reqType": "put",
             "tests": []
         },
         {
-            "_id": "efef0289-9c22-4091-a867-bc964b29c0a0",
-            "colId": "a4c40608-8fb6-462c-9080-e28642efb4aa",
+            "_id": "3ada72a2-a8f6-4142-8a2e-ecd739217fde",
+            "colId": "12ca205c-20ac-473f-8f55-6df9ce40274b",
             "containerId": "",
             "name": "userDelete",
-            "url": "http://localhost:10433/academic/user/65cc4f97aa56ebfee7bff361",
+            "url": "http://localhost:10433/tellMe/v1/user/65e95d92d2932c83c9a4c11c",
             "method": "DELETE",
             "sortNum": 50000,
-            "created": "2024-03-04T17:01:11.632Z",
-            "modified": "2024-03-04T17:01:11.632Z",
-            "headers": [],
+            "created": "2024-02-13T01:43:18.249Z",
+            "modified": "2024-03-07T06:43:19.251Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2YTRkODhjM2YyYjU2MjU3YzNmZTYiLCJpYXQiOjE3MDk3OTM2NjcsImV4cCI6MTcwOTc5NzI2N30.FgQWY9AmnQxNmB0G79id1RnpGlNRPQMWtRVqqUuNjB8"
+                }
+            ],
             "params": [],
+            "reqType": "del",
             "tests": []
         },
         {
-            "_id": "45e9154e-0a94-4587-88a0-a7c85e04c5f8",
-            "colId": "a4c40608-8fb6-462c-9080-e28642efb4aa",
+            "_id": "96c189bb-2b17-4bee-abad-8a219d58ebd8",
+            "colId": "12ca205c-20ac-473f-8f55-6df9ce40274b",
             "containerId": "",
             "name": "editMyProfile Copy",
             "url": "http://localhost:10433/academic/user/editMyProfile",
             "method": "PUT",
             "sortNum": 60000,
-            "created": "2024-03-04T17:01:11.634Z",
-            "modified": "2024-03-04T17:01:11.634Z",
+            "created": "2024-02-18T06:13:58.495Z",
+            "modified": "2024-02-18T06:19:14.986Z",
             "headers": [
                 {
                     "name": "x-access-token",

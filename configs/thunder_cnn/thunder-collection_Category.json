@@ -1,0 +1,74 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Category",
+    "dateExported": "2024-03-07T06:49:21.136Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2dce66af-794e-4664-ba27-94e924101dcd",
+            "colId": "a06d9208-7474-45f8-8a64-418182e243cf",
+            "containerId": "",
+            "name": "createCategory",
+            "url": "http://localhost:10433/tellMe/v1/categorie",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-06T03:15:30.725Z",
+            "modified": "2024-03-07T04:26:21.700Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU2YTU0MTdkOWJkYjgwNGIwYWZmOTQiLCJpYXQiOjE3MDk3ODI5NzMsImV4cCI6MTcwOTc4NjU3M30.l3YBqJ8aKa4fz4uMYTlko5QQF6_oRBtEj_vpA2GLIVk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"Guatemala\",\r\n  \"desc\": \"Descubre la belleza y la cultura de Guatemala: viajes, turismo, gastronomía, historia, eventos culturales y mucho más sobre este hermoso país centroamericano.\"\r\n}\r\n",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "2f9d966b-3f29-4305-b2d2-18f6f523f21d",
+            "colId": "a06d9208-7474-45f8-8a64-418182e243cf",
+            "containerId": "",
+            "name": "deleteCategory",
+            "url": "http://localhost:10433/tellMe/v1/categorie",
+            "method": "DELETE",
+            "sortNum": 15000,
+            "created": "2024-03-06T03:19:03.558Z",
+            "modified": "2024-03-06T04:52:41.638Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWNjNGY5NGFhNTZlYmZlZTdiZmYzNWUiLCJpYXQiOjE3MDgxODIwOTgsImV4cCI6MTcwODE4NTY5OH0.8nCc3xlmUN36EOkJ1l1QXJcKaadCktWm-yG5o7MSCws"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Deportes\"\n}",
+                "form": []
+            },
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "20ca5b93-7d24-41a0-9a15-5d3075ec637b",
+            "colId": "a06d9208-7474-45f8-8a64-418182e243cf",
+            "containerId": "",
+            "name": "getCategory",
+            "url": "http://localhost:10433/tellMe/v1/categorie",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-06T03:15:35.499Z",
+            "modified": "2024-03-06T04:52:28.774Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
+}

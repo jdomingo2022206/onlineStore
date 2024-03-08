@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import Usuario from '../users/user.model.js'
+import Usuario from '../modules/user/user.model.js'
 
 export const validateJWT = async (req, res, next) => {
     const token = req.header("x-access-token");
@@ -34,7 +34,7 @@ export const validateJWT = async (req, res, next) => {
   } catch (e) {
     console.log(e),
       res.status(401).json({
-        msg: "Token no válido",
+        msg: "Token no válido",e
       });
   }
 }
