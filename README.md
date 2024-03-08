@@ -6,7 +6,7 @@ This project focuses on developing a web API implemented in Node.js, aimed at ma
 > [<img src="https://cdn-icons-png.flaticon.com/512/8146/8146003.png" width="300" height="300">](URL_del_Enlace)
 
 ## Table of Contents
-- #### [How run the project?](#how-run-the-project)
+- #### [How run the project?](#how-run-the-project-1)
 - #### [Create Token](#create-token)
 - #### [Specific Functions](#specific-functions)
   - ###### [Important Notes](#important-notes)
