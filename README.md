@@ -6,8 +6,14 @@ This project focuses on developing a web API implemented in Node.js, aimed at ma
 > [<img src="https://cdn-icons-png.flaticon.com/512/8146/8146003.png" width="300" height="300">](URL_del_Enlace)
 
 ## Table of Contents
-1. [How to Run the Project?](#how-to-run-the-project)
-2. [Create Token](#create-token)
+- [Overview](#overview)
+  - [Table of Contents](#table-of-contents)
+  - [How run the project?](#how-run-the-project)
+  - [Create Token](#create-token)
+  - [Specific Functions](#specific-functions)
+    - [Administrator:](#administrator)
+    - [Client:](#client)
+  - [Thanks](#thanks)
 
 
 ## How run the project?
@@ -54,7 +60,7 @@ Remember set your variables creating your .env file The variables you should cre
 
 ## Specific Functions
 
->###**Important Notes:** 
+> ### **Important Notes:** 
 >**All functions** described below require **authentication to access** and are backed by a **MongoDB database** implemented with NodeJS technology.
 
 ### Administrator:
