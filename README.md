@@ -1,7 +1,7 @@
 # Overview
 This project focuses on developing a web API implemented in Node.js, aimed at managing the registration of sales, online products, and other business operations of a company. The application is structured into two main sections: administrator and client, each with its own set of functionalities.
 
-> **Online Store** everything in 'online management' for you.
+> **Online Store** everything in `online management` for you.
 >
 > [<img src="https://cdn-icons-png.flaticon.com/512/8146/8146003.png" width="300" height="300">](URL_del_Enlace)
 
