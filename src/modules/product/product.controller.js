@@ -12,7 +12,8 @@ export const productGet = async (req, res) => {
         const [total, products] = await Promise.all([
             Product.countDocuments(query),
             Product.find(query)
-                .select ('-_id -__v name desc price stock img -estado date ')
+                // .select ('-_id -__v name desc price stock img -estado date ')
+                .select ('name desc price stock img date ')
                 .populate({
                     path: 'categoryId',
                     model: 'Category', 
@@ -79,16 +80,19 @@ export const productGetByName = async (req, res) => {
 
 export const createProduct = async (req, res) => {
     try {
-        const {name, desc, price, stock, categoryName} = req.body;
+        const {name, desc, price, stock} = req.body;
+        let {categoryName} = req.body;
         const user = await isToken(req, res);
         if (!user){return;}else if (user.role !== 'ADMIN_ROLE'){return res.status(401).json({msg: 'Unauthorized'});}
-        const category = await Category.findById(categoryName);
+        categoryName = "#"+categoryName.toLowerCase().replace(/ /g, '');
+        const category = await Category.findOne({name: categoryName});
         if (!category){return res.status(400).json({msg: 'Category not found'});}
         const categoryId = category._id;
         const product = new Product({name, desc, price, stock, categoryId});
         await product.save();
-        res.status(201).json({msg: 'Product created successfully'});
+        res.status(201).json({msg: 'Product created successfully', product});
     } catch (error) {
+        console.log('Error creating product: ', error);
         res.status(500).json({msg: 'Upss!!! Sorry, there was an error creating the product.', error});
     }
 }

@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "User",
-    "dateExported": "2024-03-07T06:49:16.208Z",
+    "dateExported": "2024-03-12T17:46:32.430Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,11 +10,11 @@
             "colId": "ad268604-63d4-4ba8-8239-20465e858bde",
             "containerId": "",
             "name": "userPost",
-            "url": "http://localhost:10433/tellMe/v1/user/",
+            "url": "http://localhost:10433/onlineStore/v1/user/",
             "method": "POST",
             "sortNum": 2500,
             "created": "2024-03-05T05:26:33.079Z",
-            "modified": "2024-03-05T05:26:33.079Z",
+            "modified": "2024-03-12T17:37:14.748Z",
             "headers": [],
             "params": [],
             "body": {
@@ -22,13 +22,14 @@
                 "raw": "{\n  \"name\":\"user\",\n  \"mail\":\"user1@kinal.edu.gt\",\n  \"password\":\"uss\"\n}",
                 "form": []
             },
+            "reqType": "post",
             "tests": []
         },
         {
             "_id": "12d7d9fa-a61c-4cbb-b8cd-716e86061c52",
             "colId": "ad268604-63d4-4ba8-8239-20465e858bde",
             "containerId": "",
-            "name": "editMyProfile Copy Copy",
+            "name": "editMyProfile",
             "url": "http://localhost:10433/academic/user/editMyProfile",
             "method": "PUT",
             "sortNum": 17500,

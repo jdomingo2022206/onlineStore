@@ -49,9 +49,7 @@ export const createCategory = async (req, res) => {
         let {name} = req.body;
         const {desc} = req.body;
         const user = await isToken(req, res);
-        if (!user){
-            return;
-        }
+        if (!user){return;}else if (user.role !== 'ADMIN_ROLE'){return res.status(401).json({msg: 'Unauthorized'});}
         name = "#"+name.toLowerCase().replace(/ /g, '');
         const existCategory = await Category.findOne({name})
         if (existCategory){
@@ -72,12 +70,7 @@ export const deleteCategory = async (req, res) => {
     try {
         let {name} = req.body;
         const user = await isToken(req, res);
-        if (!user){
-            return;
-        }
-        if (user.role !== 'ADMIN_ROLE'){
-            return res.status(400).json({msg: 'You do not have the necessary permissions to delete the category.'});
-        }
+        if (!user){return;}else if (user.role !== 'ADMIN_ROLE'){return res.status(401).json({msg: 'Unauthorized'});}
         name = "#"+name.toLowerCase().replace(/ /g, '');
         const existCategory = await Category.findOne({name})
         if (!existCategory){
