@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Product",
+    "dateExported": "2024-03-12T17:46:48.419Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b5b6ab82-106b-40f6-9b40-e193aac99212",
+            "colId": "1ad0b45c-795e-4b6f-9b93-3519abbdf9d5",
+            "containerId": "",
+            "name": "createProduct",
+            "url": "http://localhost:10433/onlineStore/v1/product",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-11T17:38:14.956Z",
+            "modified": "2024-03-12T17:14:44.206Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNjM1NzcsImV4cCI6MTcxMDI2NzE3N30.lpHjxqGNWHrb6YyMoY4wy2q_vSyhsODelD-TFGYmcnA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"Monitor ASUS ROG Swift PG279Q\",\r\n  \"desc\": \"Monitor gaming de 27 pulgadas con resolución WQHD y tasa de refresco de 165Hz.\",\r\n  \"price\": 699.99,\r\n  \"stock\": 20,\r\n  \"categoryName\": \"asus\"\r\n}\r\n",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "c79a57dd-f986-48ac-ba4b-125fcf7cf2b6",
+            "colId": "1ad0b45c-795e-4b6f-9b93-3519abbdf9d5",
+            "containerId": "",
+            "name": "getProduct",
+            "url": "http://localhost:10433/onlineStore/v1/product/",
+            "method": "GET",
+            "sortNum": 12500,
+            "created": "2024-03-11T17:39:35.213Z",
+            "modified": "2024-03-12T16:50:30.228Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "4b258ec6-9cf7-4a42-964f-71d9774b2e55",
+            "colId": "1ad0b45c-795e-4b6f-9b93-3519abbdf9d5",
+            "containerId": "",
+            "name": "updateProduct",
+            "url": "http://localhost:10433/onlineStore/v1/product",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2024-03-11T17:38:53.268Z",
+            "modified": "2024-03-11T19:35:04.817Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "6160ddcc-24cf-477d-a1ca-8eda5ae505c7",
+            "colId": "1ad0b45c-795e-4b6f-9b93-3519abbdf9d5",
+            "containerId": "",
+            "name": "deleteProduct",
+            "url": "http://localhost:10433/onlineStore/v1/product",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-03-11T17:38:24.836Z",
+            "modified": "2024-03-12T17:29:09.141Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNjM1NzcsImV4cCI6MTcxMDI2NzE3N30.lpHjxqGNWHrb6YyMoY4wy2q_vSyhsODelD-TFGYmcnA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Monitor ASUS ROG Swift PG279Q\",\n  \"date\": \"2024-03-12T17:28:04.306Z\"\n}",
+                "form": []
+            },
+            "reqType": "del",
+            "tests": []
+        }
+    ]
+}

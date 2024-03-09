@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Log",
-    "dateExported": "2024-03-07T06:49:06.284Z",
+    "dateExported": "2024-03-12T17:46:54.045Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,11 +10,11 @@
             "colId": "c0245396-a55c-4867-952d-dae65d6e9709",
             "containerId": "",
             "name": "login",
-            "url": "http://localhost:10433/tellMe/v1/auth/login",
+            "url": "http://localhost:10433/onlineStore/v1/auth/login",
             "method": "POST",
             "sortNum": 30000,
             "created": "2024-02-16T16:20:10.037Z",
-            "modified": "2024-03-07T06:41:07.147Z",
+            "modified": "2024-03-11T21:12:01.230Z",
             "headers": [],
             "params": [],
             "body": {

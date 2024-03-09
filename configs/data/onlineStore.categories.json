@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "65ef773e6c8b927c063840d2"
+  },
+  "name": "#software",
+  "desc": "Descubre software para todas tus necesidades: sistemas operativos, suites de oficina, herramientas de diseño, y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:27:26.094Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef77566c8b927c063840d7"
+  },
+  "name": "#computadoras",
+  "desc": "Explora una amplia gama de computadoras: laptops, desktops, workstations y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:27:50.456Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef778b0f6dce648a6ce1f6"
+  },
+  "name": "#teléfonosmóviles",
+  "desc": "Descubre los últimos teléfonos móviles y smartphones: iPhones, Androids, y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:28:43.019Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef77940f6dce648a6ce1fb"
+  },
+  "name": "#accesoriosdecomputadoras",
+  "desc": "Encuentra una variedad de accesorios para computadoras: teclados, ratones, monitores, y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:28:52.559Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef779e0f6dce648a6ce200"
+  },
+  "name": "#dispositivosdealmacenamiento",
+  "desc": "Explora dispositivos de almacenamiento: discos duros, unidades flash USB, tarjetas de memoria, y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:29:02.425Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef77bd0f6dce648a6ce205"
+  },
+  "name": "#intel",
+  "desc": "Explora productos con procesadores Intel: laptops, desktops y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:29:33.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef77c10f6dce648a6ce20a"
+  },
+  "name": "#amd",
+  "desc": "Descubre productos con procesadores AMD: laptops, desktops y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:29:37.657Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef77d70f6dce648a6ce20f"
+  },
+  "name": "#nvidia",
+  "desc": "Explora productos de la marca Nvidia: tarjetas gráficas, procesadores gráficos, sistemas de IA y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:29:59.319Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef77db0f6dce648a6ce214"
+  },
+  "name": "#samsung",
+  "desc": "Descubre productos de la marca Samsung: teléfonos inteligentes, tabletas, televisores y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:30:03.907Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef77e20f6dce648a6ce219"
+  },
+  "name": "#apple",
+  "desc": "Explora productos de la marca Apple: iPhones, iPads, MacBooks y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:30:10.304Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef783e0f6dce648a6ce221"
+  },
+  "name": "#dell",
+  "desc": "Descubre productos de la marca Dell: laptops, computadoras de escritorio, servidores y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:31:42.674Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef78440f6dce648a6ce226"
+  },
+  "name": "#logitech",
+  "desc": "Explora productos de la marca Logitech: periféricos de computadora, como ratones, teclados, y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:31:48.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef784b0f6dce648a6ce22b"
+  },
+  "name": "#rockstargames",
+  "desc": "Descubre juegos de la marca Rockstar Games: Grand Theft Auto, Red Dead Redemption, y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:31:55.327Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef78510f6dce648a6ce230"
+  },
+  "name": "#setup",
+  "desc": "Encuentra equipos y accesorios para configurar tu espacio de trabajo o juego: escritorios, sillas, iluminación y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:32:01.628Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef78740f6dce648a6ce235"
+  },
+  "name": "#asus",
+  "desc": "Descubre productos de la marca ASUS: laptops, tarjetas madre, tarjetas gráficas, monitores y más.",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:32:36.243Z"
+  },
+  "__v": 0
+}]

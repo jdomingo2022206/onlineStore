@@ -1,0 +1,270 @@
+[{
+  "_id": {
+    "$oid": "65ef7e5900fd686a28f9c9fe"
+  },
+  "name": "Microsoft Office 365",
+  "desc": "Suite de oficina que incluye Word, Excel, PowerPoint y más.",
+  "price": 99.99,
+  "stock": 50,
+  "categoryId": {
+    "$oid": "65ef773e6c8b927c063840d2"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:57:45.859Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef7e8162ca651ee1e95c22"
+  },
+  "name": "Laptop HP Pavilion",
+  "desc": "Laptop de 15.6 pulgadas con procesador Intel Core i5, 8GB de RAM y 256GB de almacenamiento SSD.",
+  "price": 799.99,
+  "stock": 20,
+  "categoryId": {
+    "$oid": "65ef77566c8b927c063840d7"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:58:25.916Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef7e9262ca651ee1e95c27"
+  },
+  "name": "iPhone 13 Pro",
+  "desc": "Último modelo de iPhone con pantalla Super Retina XDR, chip A15 Bionic y sistema de triple cámara.",
+  "price": 1099.99,
+  "stock": 30,
+  "categoryId": {
+    "$oid": "65ef778b0f6dce648a6ce1f6"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:58:42.642Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef7ec9990f7d1a86dff60c"
+  },
+  "name": "Teclado mecánico Logitech G Pro",
+  "desc": "Teclado mecánico diseñado para juegos con interruptores GX Blue y retroiluminación RGB.",
+  "price": 129.99,
+  "stock": 50,
+  "categoryId": {
+    "$oid": "65ef77940f6dce648a6ce1fb"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:59:37.198Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ef7ece990f7d1a86dff611"
+  },
+  "name": "Disco Duro Externo WD Elements",
+  "desc": "Disco duro externo portátil con capacidad de 2TB y conexión USB 3.0.",
+  "price": 79.99,
+  "stock": 40,
+  "categoryId": {
+    "$oid": "65ef779e0f6dce648a6ce200"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-11T21:59:42.147Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d34ce61a2e57dc4f72c"
+  },
+  "name": "Procesador Intel Core i7-11700K",
+  "desc": "Procesador de 8 núcleos y 16 hilos de última generación de Intel.",
+  "price": 399.99,
+  "stock": 50,
+  "categoryId": {
+    "$oid": "65ef77bd0f6dce648a6ce205"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:13:24.381Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d43ce61a2e57dc4f731"
+  },
+  "name": "Procesador AMD Ryzen 9 5900X",
+  "desc": "Procesador de 12 núcleos y 24 hilos de alta gama de AMD.",
+  "price": 549.99,
+  "stock": 40,
+  "categoryId": {
+    "$oid": "65ef77c10f6dce648a6ce20a"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:13:39.377Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d48ce61a2e57dc4f736"
+  },
+  "name": "Tarjeta gráfica NVIDIA GeForce RTX 3080",
+  "desc": "Tarjeta gráfica de última generación para gaming y diseño.",
+  "price": 799.99,
+  "stock": 30,
+  "categoryId": {
+    "$oid": "65ef77d70f6dce648a6ce20f"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:13:44.370Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d5ace61a2e57dc4f73b"
+  },
+  "name": "Smartphone Samsung Galaxy S21 Ultra",
+  "desc": "Teléfono inteligente con pantalla Dynamic AMOLED de 6.8 pulgadas y cámara de 108 MP.",
+  "price": 1199.99,
+  "stock": 20,
+  "categoryId": {
+    "$oid": "65ef77db0f6dce648a6ce214"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:14:02.947Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d60ce61a2e57dc4f740"
+  },
+  "name": "Laptop Apple MacBook Pro 16\"",
+  "desc": "Portátil potente con pantalla Retina de 16 pulgadas y procesador Intel Core i9.",
+  "price": 2399.99,
+  "stock": 15,
+  "categoryId": {
+    "$oid": "65ef77e20f6dce648a6ce219"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:14:08.594Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d66ce61a2e57dc4f745"
+  },
+  "name": "Laptop Dell XPS 15",
+  "desc": "Portátil premium con pantalla InfinityEdge y procesador Intel Core i7.",
+  "price": 1899.99,
+  "stock": 25,
+  "categoryId": {
+    "$oid": "65ef783e0f6dce648a6ce221"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:14:14.284Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d6cce61a2e57dc4f74a"
+  },
+  "name": "Ratón Logitech G Pro X Superlight",
+  "desc": "Ratón gaming ultraligero con sensor HERO 25K.",
+  "price": 149.99,
+  "stock": 35,
+  "categoryId": {
+    "$oid": "65ef78440f6dce648a6ce226"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:14:20.584Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d75ce61a2e57dc4f74f"
+  },
+  "name": "Videojuego Grand Theft Auto V",
+  "desc": "Juego de acción y aventura en un mundo abierto.",
+  "price": 39.99,
+  "stock": 60,
+  "categoryId": {
+    "$oid": "65ef784b0f6dce648a6ce22b"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:14:29.389Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d7ece61a2e57dc4f754"
+  },
+  "name": "Escritorio Gamer RGB",
+  "desc": "Escritorio espacioso con iluminación RGB para configuraciones gaming.",
+  "price": 299.99,
+  "stock": 10,
+  "categoryId": {
+    "$oid": "65ef78510f6dce648a6ce230"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:14:38.719Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f08d84ce61a2e57dc4f759"
+  },
+  "name": "Monitor ASUS ROG Swift PG279Q",
+  "desc": "Monitor gaming de 27 pulgadas con resolución WQHD y tasa de refresco de 165Hz.",
+  "price": 699.99,
+  "stock": 20,
+  "categoryId": {
+    "$oid": "65ef78740f6dce648a6ce235"
+  },
+  "img": "No image available",
+  "estado": true,
+  "date": {
+    "$date": "2024-03-12T17:14:44.190Z"
+  },
+  "__v": 0
+}]

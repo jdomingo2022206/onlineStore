@@ -24,9 +24,9 @@ router.post(
   [
     validateJWT,
     check("name", "The name is required ").not().isEmpty(),
-    check("name", "The name must be greater than 3 characters").isLength({min: 3}).matches(/^[a-zA-Z\s]+$/).withMessage("The name must contain only letters and spaces"),
+    check("name", "The name must be greater than 3 characters").isLength({min: 3}),
     check("desc", "The description is required").not().isEmpty(),
-    check("desc", "The description must be greater than 15 characters").isLength({min: 15}).matches("^[a-zA-Z0-9 ]*$").withMessage("The name must be alphanumeric"),
+    check("desc", "The description must be greater than 15 characters").isLength({min: 15}),
     validateCampus,
   ],
   createCategory
