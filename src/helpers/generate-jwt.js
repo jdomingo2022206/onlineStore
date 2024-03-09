@@ -10,7 +10,7 @@ export const generarteJWT = (uid = '') => {
                 expiresIn: '1h',
             },
         (err, token) =>{
-            err ? (console.log(err),reject('Nose pudo generar token')) : resolve(token)
+            err ? (console.log(err),reject('Can not generte token :(')) : resolve(token)
         }   
         )
     })
