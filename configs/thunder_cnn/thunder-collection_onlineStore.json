@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "onlineStore",
-    "dateExported": "2024-03-12T22:23:55.700Z",
+    "dateExported": "2024-03-13T06:46:13.201Z",
     "version": "1.1",
     "folders": [
         {
@@ -50,11 +50,11 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-03-12T17:57:15.093Z",
-            "modified": "2024-03-12T21:25:40.775Z",
+            "modified": "2024-03-13T06:09:35.486Z",
             "headers": [
                 {
                     "name": "x-access-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAzMTAxNjIsImV4cCI6MTcxMDMxMzc2Mn0.MdsOU5LqiXfb0HFSxGgGsgMEZXOiSLu7_ADnKUAS_uw"
                 }
             ],
             "params": [],
@@ -70,11 +70,11 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-03-12T17:56:50.093Z",
-            "modified": "2024-03-12T22:12:41.314Z",
+            "modified": "2024-03-13T06:10:13.998Z",
             "headers": [
                 {
                     "name": "x-access-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAzMTAxNjIsImV4cCI6MTcxMDMxMzc2Mn0.MdsOU5LqiXfb0HFSxGgGsgMEZXOiSLu7_ADnKUAS_uw"
                 }
             ],
             "params": [],
@@ -120,11 +120,11 @@
             "method": "POST",
             "sortNum": 50000,
             "created": "2024-03-12T17:59:25.113Z",
-            "modified": "2024-03-12T21:48:30.098Z",
+            "modified": "2024-03-13T06:15:55.600Z",
             "headers": [
                 {
                     "name": "x-access-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAzMTAxNjIsImV4cCI6MTcxMDMxMzc2Mn0.MdsOU5LqiXfb0HFSxGgGsgMEZXOiSLu7_ADnKUAS_uw"
                 }
             ],
             "params": [],
@@ -140,11 +140,11 @@
             "method": "GET",
             "sortNum": 70000,
             "created": "2024-03-12T17:59:52.176Z",
-            "modified": "2024-03-12T21:48:47.470Z",
+            "modified": "2024-03-13T06:16:31.973Z",
             "headers": [
                 {
                     "name": "x-access-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAzMTAxNjIsImV4cCI6MTcxMDMxMzc2Mn0.MdsOU5LqiXfb0HFSxGgGsgMEZXOiSLu7_ADnKUAS_uw"
                 }
             ],
             "params": [],
@@ -169,6 +169,20 @@
             ],
             "params": [],
             "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "aa725ea8-1a6e-42d6-b272-119304c7448d",
+            "colId": "854226ba-8126-48ad-8a10-7f02b3f66e43",
+            "containerId": "c9bf3b07-4dd7-4369-bb02-5a622dc88546",
+            "name": "topSoldProducts",
+            "url": "http://localhost:10433/onlineStore/v1/bill/statistics",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-13T06:43:54.292Z",
+            "modified": "2024-03-13T06:44:11.877Z",
+            "headers": [],
+            "params": [],
             "tests": []
         }
     ]

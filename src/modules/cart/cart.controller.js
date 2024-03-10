@@ -136,6 +136,7 @@ export const buyCart = async (req, res = response) => {
         }
         // Crea una nueva compra con los productos del carrito
         // y actualiza el stock de los productos
+        let totalPrice = 0;
         const products = [];
         for (const item of cart.products) {
             const product = await Product.findById(item.productId);
@@ -143,10 +144,13 @@ export const buyCart = async (req, res = response) => {
                 return res.status(400).json({ msg: 'Insufficient stock' });
             }
             product.stock -= item.quantity;
+
             await product.save();
             products.push({ productId: item.productId, quantity: item.quantity });
+            
+            totalPrice += product.price * item.quantity;
         }
-        const totalPrice = cart.totalPrice;
+        // const totalPrice = cart.totalPrice;
         cart.products = [];
         cart.totalPrice = 0;
         await cart.save();
@@ -172,29 +176,3 @@ const createBill = async (userId, products, totalPrice) => {
     }
 }
 
-/*
-const purchaseHistory = async (req, res = response) => {
-    console.log('');
-    console.log('--- [NOTES] purchaseHistory.cart');
-    try {
-        const user = await isToken(req, res);
-        if (!user) { return; }
-        const query = { userId: user._id };
-        const bills = await Bill.find(query)
-            .select('userId products totalPrice date')
-            .populate({
-                path: 'userId',
-                model: 'User',
-                select: 'name'
-            })
-            .populate({
-                path: 'products.productId',
-                model: 'Product',
-                select: 'name price'
-            });
-        res.status(200).json({ bills });
-    } catch (e) {
-        res.status(500).json({ msg: 'There was an error getting the purchase history.', error: e });
-    }
-}
-*/ 

@@ -15,6 +15,7 @@ import billRoutes from '../src/modules/bill/bill.routes.js';
 
 class Server {
     constructor() {
+        this.notes();
         this.app = express();
         this.port = process.env.PORT;
         this.userPath = '/onlineStore/v1/user';
@@ -61,6 +62,16 @@ class Server {
             console.log('Server running on port ', this.port);
         });
     }
+
+    notes() {
+        console.log('');
+        console.log('');
+        console.log('NOTE: Server constructor called!');
+        console.log('if port 10433 is in use:');
+        console.log('netstat -ano | findstr :10433');
+        console.log('taskkill /PID <PID> /F');
+        console.log('');
+    }
 }
 
 export default Server;
@@ -69,5 +80,5 @@ export default Server;
 if port 10433 is in use:
 
 netstat -ano | findstr :10433
-taskkill /PID 21060 /F
+taskkill /PID <PID> /F
 */ 
