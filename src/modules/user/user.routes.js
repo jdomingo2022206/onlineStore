@@ -68,6 +68,4 @@ router.post(
         validateCampus,
     ], userAdminPost); 
 
-
-
 export default router;

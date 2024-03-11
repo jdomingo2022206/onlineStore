@@ -18,10 +18,14 @@ const ProductSchema = Schema({
     required: [true, "Quantity is required"],
     default: 1,
   },
-  category: {
+  categoryId: {
     type: Schema.Types.ObjectId,
     ref: "Category",
     required: [true, "Category is required"],
+  },
+  img : {
+    type: String,
+    default: 'No image available'
   },
   estado: {
     type: Boolean,

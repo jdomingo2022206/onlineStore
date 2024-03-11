@@ -9,21 +9,21 @@ export const login = async (req, res) => {
         const user = await User.findOne({ mail: mail });
         if(!user){
             return res.status(400).json({
-                msg: 'El correo no está registrado'
+                msg: 'The email is not registered in the database.'
             })
         }
 
         // verificar si el user está activo
         if(!user.estado){
             return res.status(400).json({
-                msg: 'El user no existe en la base de datos'
+                msg: 'The user does not exist in database.'
             })
         }
         // verificar que la contraseña sea la correcta
         const validPassword = bcryptjs.compareSync(password, user.password);
         if(!validPassword){
             return res.status(400).json({
-                msg: 'Contraseña incorrecta'
+                msg: 'Incorrect password.'
             })
         }
 
@@ -38,7 +38,7 @@ export const login = async (req, res) => {
     }catch(e){
         console.log(e);
         res.status(500).json({
-            msg: 'Comuniquese con el admin'
+            msg: 'Please contact the administrator/support.'
         })
     }
 }

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const CategorieSchema = mongoose.Schema({
+const CategorySchema = mongoose.Schema({
   name: {
     type: String,
     required: [true, "El nombre es obligatorio"],
@@ -20,4 +20,4 @@ const CategorieSchema = mongoose.Schema({
   }
 });
 
-export default mongoose.model('Categorie', CategorieSchema);
+export default mongoose.model('Category', CategorySchema);

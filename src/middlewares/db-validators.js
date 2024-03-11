@@ -1,6 +1,6 @@
 import User from "../modules/user/user.model.js";
 import Role from "../modules/role/role.model.js";
-import Publication from "../modules/publication/publication.model.js";
+import ProductPublication from "../modules/product/product.model.js";
 import Comment from "../modules/comment/comment.model.js";
 
 export const existentEmail = async (mail = '') => {
@@ -48,49 +48,49 @@ export const roleValid = async (role='') => {
     }
 }
 
-export const existentPublicationById = async ( id = '') => {
+export const existentProductById = async ( id = '') => {
     console.log('');
-    console.log('--- [NOTES] existentPublicationById.db-validators');
+    console.log('--- [NOTES] existentProductById.db-validators');
     try {
-        const existPublication = await Publication.findOne({id});
+        const existProduct = await Product.findOne({id});
     
-        if(existPublication){
-            throw new Error(`La publicacion con el ${ id } no existe`);
+        if(existProduct){
+            throw new Error(`The product with the ${ id } does not exist in the database.`);
         }
     } catch (error) {
-        console.log('Error al buscar publicacion por id:', error);
+        console.log('Error finding product:', error);
         //console.error('Error al buscar publicacion por id:', error);
         //throw error;
     }
 }
 
-export const copyExistentPublication = async (name = '', date ='') => {
+export const copyExistentProduct = async (name = '', date ='') => {
     console.log('');
-    console.log('--- [NOTES] copyExistentPublication.db-validators');
+    console.log('--- [NOTES] copyExistentProduct.db-validators');
     try {
-        const existPublication = await Publication.findOne({name, date});
+        const existProduct = await Product.findOne({name, date});
 
-        if (existPublication) {
-            throw new Error(`El curso ${name} ya fue registrado`);
+        if (existProduct) {
+            throw new Error(`The product ${name} was already registered.`);
         }
     } catch (error) {
-        console.log('Error al buscar publicacion por nombre y fecha:', error);
-        //console.error('Error al buscar publicacion por nombre y fecha:', error);
+        console.log('Error finding publication by name and date:', error);
+        //console.error('Error finding publication by name and date:', error);
         //throw error;
     }
 }
 
-export const existentPublication = async (name = '', date='') => {
+export const existentProduct = async (name = '', date='') => {
     console.log('');
-    console.log('--- [NOTES] existentPublication.db-validators');
+    console.log('--- [NOTES] existentProduct.db-validators');
     try {
-        const existPublication = await Publication.findOne({name, date});
-        if(!existPublication){
-            throw new Error(`La publicacion con el ${ name } y la fecha ${date} no existe en base de datos.` )
+        const existProduct = await Product.findOne({name, date});
+        if(!existProduct){
+            throw new Error(`The product with the ${ name } and the date ${date} does not exist in database` )
         }
     } catch (error) {
-        console.log('Error al buscar publicacion por nombre y fecha:', error);
-        //console.error('Error al buscar publicacion por nombre y fecha:', error);
+        console.log('Error finding publication by name and date:', error);
+        //console.error('Error finding publication by name and date:', error);
         //throw error;
     }
 }

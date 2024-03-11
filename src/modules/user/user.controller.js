@@ -5,9 +5,9 @@ import User from "./user.model.js";
 
 const verifyAdmin = async (user, res) =>{
     if (user.role !== 'ADMIN_ROLE') {
-        res.status(403).json({ msg: 'No estas autorizado.' });
-        console.log('No estas autorizado.');
-        throw new Error('No estas autorizado.');
+        res.status(403).json({ msg: 'You are not authorized.' });
+        console.log('You are not authorized.');
+        throw new Error('You are not authorized.');
     }
     console.log('* Admin auth ;) ***');
     return;
@@ -38,7 +38,8 @@ export const userGet = async (req, res = response ) => {
             users
         });
     } catch (e) {
-        console.log('Hubo un error al obtener usuarios.');
+        // console.log('There was an error getting users.');
+        res.status(500).json({ msg: 'There was an error getting users.', e });
         //res.status(500).json({ msg: 'Hubo un error al obtener usuarios. Error ${e.status}: ${e.message}' });
         // throw new Error(e);
     }
@@ -56,8 +57,8 @@ export const getUserByid = async (req, res) => {
             userFind
         });
     } catch (e) {
-        console.log('Hubo un error al obtener el usuario por id.');
-        res.status(500).json({ msg: 'Hubo un error al obtener el usuario por id.' });
+        // console.log('There was an error getting the user by id.');
+        res.status(500).json({ msg: 'There was an error getting the user by id.', e });
         // throw new Error(e);
     }
 }
@@ -75,12 +76,12 @@ export const userPut = async (req, res) => {
         const userFind = await User.findOne({_id: _id});
 
         res.status(200).json({
-            msg: 'Usuario Actualizado exitosamente',
+            msg: 'User updated successfully.',
             userFind
         })
     } catch (e) {
-        console.log('Hubo un error al actualizar usuario.');
-        res.status(500).json({ msg: 'Hubo un error al actualizar usuario.' });
+        // console.log('There was an error updating the user.');
+        res.status(500).json({ msg: 'There was an error updating the user', e });
         // throw new Error(e);
     }
 }
@@ -97,12 +98,12 @@ export const userDelete = async (req, res) => {
         const userFind = await User.findOne({_id: id});
 
         res.status(200).json({
-            msg: 'user eliminado exitosamente',
+            msg: 'User deleted successfully.',
             userFind
         });
     } catch (e) {
-        console.log('Hubo un error al eliminar usuario.');
-        res.status(500).json({ msg: 'Hubo un error al eliminar usuario.' });
+        // console.log('There was an error deleting the user.');
+        res.status(500).json({ msg: 'There was an error deleting the user', e });
         // throw new Error(e);
     }
 }
@@ -123,12 +124,10 @@ export const userPost = async (req, res) =>{
             user
         });
     } catch (e) {
-        console.log('Hubo un error al agregar usuario.');
-        
         if (e.code === 11000) {
-            res.status(500).json({ msg: 'El correo ya fue registrado ' });
+            res.status(500).json({ msg: 'The email already was register.' });
         }else{
-            res.status(500).json({ msg: 'Hubo un error al agregar usuario. '});
+            res.status(500).json({ msg: 'There was an error adding user.', e});
         }
         // throw new Error(e);
     }
@@ -150,8 +149,8 @@ export const userAdminPost = async (req, res) =>{
             user
         });
     } catch (e) {
-        console.log('Hubo un error al agregar admin.');
-        res.status(500).json({ msg: 'Hubo un error al agregar profesor.' });
+        // console.log('There was an error adding admin.');
+        res.status(500).json({ msg: 'There was an error adding admin', e });
         // throw new Error(e);
     }
 }
@@ -165,12 +164,12 @@ export const editMyProfile = async (req, res) => {
         await User.findByIdAndUpdate(user._id, resto);
         const usuario = await User.findOne({_id: user.id});
 
-        res.status(200).json({ msg: "Tu perfil se a actualizado exitosamente: ", usuario})
+        res.status(200).json({ msg: "Your profile was successfully updated ", usuario})
         
         
     }catch (e) {
-        console.log('Hubo un error al editar el perfil.');
-        res.status(500).json({ msg: 'Hubo un error al editar el perfil.' });
+        // console.log('There was an error editing the profile.');
+        res.status(500).json({ msg: 'There was an error editing the profile', e });
         // throw new Error(e);
     }
 }
