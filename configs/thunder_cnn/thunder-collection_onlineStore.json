@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "onlineStore",
-    "dateExported": "2024-03-12T20:43:24.448Z",
+    "dateExported": "2024-03-12T21:57:20.530Z",
     "version": "1.1",
     "folders": [
         {
@@ -46,26 +46,44 @@
             "colId": "854226ba-8126-48ad-8a10-7f02b3f66e43",
             "containerId": "ea50aa5a-d89c-4b15-96a0-a57b0c50fba5",
             "name": "myCart",
-            "url": "",
+            "url": "http://localhost:10433/onlineStore/v1/cart",
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-03-12T17:57:15.093Z",
-            "modified": "2024-03-12T17:57:15.093Z",
-            "headers": []
+            "modified": "2024-03-12T21:25:40.775Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
         },
         {
             "_id": "f6136e0d-e931-4ac6-8f87-27c15c6ee8f8",
             "colId": "854226ba-8126-48ad-8a10-7f02b3f66e43",
             "containerId": "ea50aa5a-d89c-4b15-96a0-a57b0c50fba5",
             "name": "addToCart",
-            "url": "",
+            "url": "http://localhost:10433/onlineStore/v1/cart/add",
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-03-12T17:56:50.093Z",
-            "modified": "2024-03-12T17:57:24.046Z",
-            "headers": [],
+            "modified": "2024-03-12T21:28:45.843Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                }
+            ],
             "params": [],
-            "reqType": "get",
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productName\": \"Laptop HP Pavilion\",\n  \"date\": \"2024-03-11T21:58:25.916Z\",\n  \"quantity\": \"3\"\n}",
+                "form": []
+            },
+            "reqType": "post",
             "tests": []
         },
         {
@@ -73,29 +91,44 @@
             "colId": "854226ba-8126-48ad-8a10-7f02b3f66e43",
             "containerId": "ea50aa5a-d89c-4b15-96a0-a57b0c50fba5",
             "name": "deleteToCart",
-            "url": "",
-            "method": "PUT",
+            "url": "http://localhost:10433/onlineStore/v1/cart/delete",
+            "method": "POST",
             "sortNum": 30000,
             "created": "2024-03-12T17:57:00.102Z",
-            "modified": "2024-03-12T18:04:31.353Z",
-            "headers": [],
+            "modified": "2024-03-12T21:30:10.893Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                }
+            ],
             "params": [],
-            "reqType": "get",
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productName\": \"Laptop HP Pavilion\",\n  \"date\": \"2024-03-11T21:58:25.916Z\",\n  \"quantity\": \"1\"\n}",
+                "form": []
+            },
+            "reqType": "put",
             "tests": []
         },
         {
             "_id": "d9539e14-04ee-4524-bda1-b034c00e4a37",
             "colId": "854226ba-8126-48ad-8a10-7f02b3f66e43",
             "containerId": "baa6e11a-6853-4c06-a6d8-f8d6ef563bb6",
-            "name": "buy",
-            "url": "",
+            "name": "buyMyCart",
+            "url": "http://localhost:10433/onlineStore/v1/cart/buy",
             "method": "POST",
             "sortNum": 50000,
             "created": "2024-03-12T17:59:25.113Z",
-            "modified": "2024-03-12T18:04:38.475Z",
-            "headers": [],
+            "modified": "2024-03-12T21:48:30.098Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                }
+            ],
             "params": [],
-            "reqType": "get",
+            "reqType": "post",
             "tests": []
         },
         {
@@ -103,25 +136,39 @@
             "colId": "854226ba-8126-48ad-8a10-7f02b3f66e43",
             "containerId": "baa6e11a-6853-4c06-a6d8-f8d6ef563bb6",
             "name": "purchaseHistory",
-            "url": "",
+            "url": "http://localhost:10433/onlineStore/v1/bill",
             "method": "GET",
             "sortNum": 70000,
             "created": "2024-03-12T17:59:52.176Z",
-            "modified": "2024-03-12T17:59:52.176Z",
-            "headers": []
+            "modified": "2024-03-12T21:48:47.470Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
         },
         {
             "_id": "019525e1-18c0-4aee-978d-e1382104d60a",
             "colId": "854226ba-8126-48ad-8a10-7f02b3f66e43",
             "containerId": "ea50aa5a-d89c-4b15-96a0-a57b0c50fba5",
             "name": "resertCart",
-            "url": "",
+            "url": "http://localhost:10433/onlineStore/v1/cart",
             "method": "DELETE",
             "sortNum": 80000,
             "created": "2024-03-12T18:03:42.131Z",
-            "modified": "2024-03-12T18:04:16.410Z",
-            "headers": [],
+            "modified": "2024-03-12T21:26:05.460Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVmNDBkZDgwNzE3ODY2MGZlYTlkMDEiLCJpYXQiOjE3MTAyNzg3MzAsImV4cCI6MTcxMDI4MjMzMH0.L1uV900aYf-VKvBhu3r5_MaOrPMpPKxXViZnMFI75IM"
+                }
+            ],
             "params": [],
+            "reqType": "del",
             "tests": []
         }
     ]
