@@ -9,6 +9,8 @@ import userRoutes from '../src/modules/user/user.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
 import categoryRoutes from '../src/modules/category/category.routes.js';
 import productRoutes from '../src/modules/product/product.routes.js';
+import cartRoutes from '../src/modules/cart/cart.routes.js';
+import billRoutes from '../src/modules/bill/bill.routes.js';
 // import commentRoutes from '../src/modules/comment/comment.routes.js';
 
 class Server {
@@ -18,6 +20,8 @@ class Server {
         this.userPath = '/onlineStore/v1/user';
         this.authPath = '/onlineStore/v1/auth';
         this.productPath = '/onlineStore/v1/product';
+        this.cartPath = '/onlineStore/v1/cart';
+        this.billPath = '/onlineStore/v1/bill';
         // this.commentPath = '/onlineStore/v1/comment';
         this.categoryPath = '/onlineStore/v1/category';
 
@@ -45,6 +49,8 @@ class Server {
         this.app.use(this.userPath, userRoutes);
         this.app.use(this.authPath, authRoutes);
         this.app.use(this.productPath, productRoutes);
+        this.app.use(this.cartPath, cartRoutes);
+        this.app.use(this.billPath, billRoutes);
         // this.app.use(this.commentPath, commentRoutes);
         this.app.use(this.categoryPath, categoryRoutes);
     }
@@ -58,3 +64,10 @@ class Server {
 }
 
 export default Server;
+
+/*
+if port 10433 is in use:
+
+netstat -ano | findstr :10433
+taskkill /PID 21060 /F
+*/ 
